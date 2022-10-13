@@ -7,16 +7,18 @@ import StarshipDetails from './pages/StarshipDetails/StarshipDetails';
 function App() {
   return (
     <>
-      <Routes>
-        <Route
-          path='/'
-          element={<StarshipList />}
-        />
-        <Route
-          path='/starship'
-          element={<StarshipDetails />}
-        />
-      </Routes>
+      <div class="app">
+        <Routes>
+          <Route
+            path='/'
+            element={<StarshipList />}
+          />
+          <Route
+            path='/starship'
+            element={<StarshipDetails />}
+          />
+        </Routes>
+      </div>
     </>
   )
 }
